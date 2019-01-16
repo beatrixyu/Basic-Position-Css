@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Display and Position</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src=""></script>
+    <style>
+        [logo-icon]:hover {
+            background: #293d3d;
+            color: white;
+            border: #293d3d;
+        }
+
+        [logo-icon] {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 8px solid rgb(243, 238, 238);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: bolder;
+            transition: all .5s ease;
+        }
+
+        body {
+            position: absolute;
+            background-color: rgb(238, 16, 227);
+            width: 2000px;
+            height: 2000px;
+            border: 0;
+        }
+
+        header {
+            position: static;
+            width: 600px;
+            height: 400px;
+            background-color: aqua;
+        }
+
+        .purpleball {
+            position: sticky;
+            margin-top: 50px;
+            margin-left: 20px;
+            background-color: rgb(122, 37, 207);
+            top: 100px;
+            left: 100px;
+
+        }
+
+
+        .yellowball {
+            position: sticky;
+
+            margin-top: 100px;
+            margin-left: 20px;
+            background-color: rgb(209, 176, 26);
+            top: 200px;
+            left: 100px;
+            transition-delay: 5s;
+            transition: all .5s ease;
+        }
+
+        .roseball {
+            position: sticky;
+            margin-top: 300px;
+            margin-left: 20px;
+            background-color: rgb(236, 24, 201);
+            top: 100px;
+            left: 120px;
+        }
+
+        .blue {
+            position: absolute;
+            width: 1000px;
+            height: 600px;
+            background-color: blue;
+            top: 200px;
+            left: 100px;
+        }
+
+
+
+        .green {
+            position: fixed;
+            width: 700px;
+            height: 1500px;
+            background-color: rgb(30, 206, 30);
+            display: inline-block;
+            top: 100px;
+            left: 50px;
+        }
+
+        .purple {
+            position: absolute;
+            width: 200px;
+            height: 1000px;
+            left: 400px;
+            top: 100px;
+            background-color: blueviolet;
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="skyblue"></header>
+    <div class="green">
+        <div logo-icon class="roseball"></div>
+    </div>
+    <div class="blue">
+        <div logo-icon class="purpleball"></div>
+    </div>
+
+    <aside class="purple">
+        <div logo-icon class="yellowball"></div>
+    </aside>
+    <!-- <footer class="skyblue"></footer> -->
+
+
+</body>
+
+</html>
